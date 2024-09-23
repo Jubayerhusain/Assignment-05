@@ -5,10 +5,15 @@ noakhaliDonationBtn.addEventListener('click', function () {
     const mainBalance = getTheElementId('balance');
     const noakhaliDonateInput = getInputFieldById('noakhali-donate-input');
 
-    if (mainBalance < noakhaliDonateInput || isNaN(noakhaliDonateInput) || noakhaliDonateInput == 0) {
+    if(mainBalance < noakhaliDonateInput){
+        document.getElementById('my_modal_3').classList.add('hidden')
+        alert('insufficient balance')
+    }
+    else if (isNaN(noakhaliDonateInput) || noakhaliDonateInput == 0) {
         document.getElementById('my_modal_3').classList.add('hidden')
         return alert('invalid Input')
-    } else {
+    } 
+    else {
         const newBalance = mainBalance - noakhaliDonateInput;
         document.getElementById('balance').innerText = newBalance;
         const noakhaliMainBalance = getTheElementId('noakhali-donate-balance');
@@ -19,7 +24,7 @@ noakhaliDonationBtn.addEventListener('click', function () {
         const createElement = document.createElement('div');
         createElement.className = "bg-white m-5 rounded-xl p-2 border-2 border-gray-300";
         createElement.innerHTML = `
-        <p class="text-xl  text-gray-900 py-2">${noakhaliDonateInput} 6500 Taka is Donated for Flood Relief in Noakhali,Bangladesh</p>
+        <p class="text-xl  text-gray-900 py-2">${noakhaliDonateInput} Taka is Donated for Flood Relief in Noakhali,Bangladesh</p>
         <p class="text-md text-gray-700 pb-2 font-light">${new Date().toLocaleDateString()}</p>
         `
         const historyContainer = document.getElementById("history-container");
@@ -33,10 +38,15 @@ feniDonationBtn.addEventListener('click', function () {
     const mainBalance = getTheElementId('balance');
     const feniDonateInput = getInputFieldById('feni-donate-input');
 
-    if (mainBalance < feniDonateInput || isNaN(feniDonateInput) || feniDonateInput == 0) {
+    if(mainBalance < feniDonateInput){
+        document.getElementById('my_modal_3').classList.add('hidden')
+        alert('insufficient balance')
+   }
+   else if (isNaN(feniDonateInput) || feniDonateInput == 0) {
         document.getElementById('my_modal_3').classList.add('hidden')
         return alert('invalid Input')
-    } else {
+    }
+    else {
         const newBalance = mainBalance - feniDonateInput;
         document.getElementById('balance').innerText = newBalance;
         const feniMainBalance = getTheElementId('feni-donate-balance');
@@ -61,10 +71,15 @@ quataDonationBtn.addEventListener('click', function () {
     const mainBalance = getTheElementId('balance');
     const quataDonateInput = getInputFieldById('quata-donate-input');
 
-    if (mainBalance < quataDonateInput || isNaN(quataDonateInput) || quataDonateInput == 0) {
+    if(mainBalance < quataDonateInput ){
         document.getElementById('my_modal_3').classList.add('hidden')
-        return alert('invalid Input')
-    } else {
+        alert('insufficient balance');
+    }
+    else if (isNaN(quataDonateInput) || quataDonateInput == 0) {
+        document.getElementById('my_modal_3').classList.add('hidden')
+        return alert('invalid Input');
+    }
+     else {
         const newBalance = mainBalance - quataDonateInput;
         document.getElementById('balance').innerText = newBalance;
         const quataMainBalance = getTheElementId('feni-donate-balance');
@@ -101,4 +116,10 @@ historytab.addEventListener('click', function () {
     getIdForChangeClassName('donation-tab').classList.remove('bg-lime-400');
     getIdForChangeClassName('hero-section').classList.add('hidden');
     getIdForChangeClassName('history-section').classList.remove('hidden');
+})
+
+// get the blog btn 
+document.getElementById('blog-btn')
+.addEventListener('click', function () {
+    window.location.assign("./blog.html")
 })

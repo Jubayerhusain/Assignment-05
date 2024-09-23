@@ -31,7 +31,7 @@
       <div class="">
         <div class="navbar w-full bg-nav rounded-xl 2xl:px-14">
           <div class="navbar-start">
-            <div
+            <div id="home-btn"
               class="btn justify lg:ml-0 my-5 xl:ml-0 2xl:ml-0 bg-lime-400 text-sm lg:text-xl xl:text-xl 2xl:text-xl font-semibold"
             >
               Home
@@ -57,7 +57,7 @@
     <!-- main section start -->
     <main>
       <!-- FAQ Section  -->
-      <div class="w-12/12 lg:w-10/12 xl:w-10/12 2xl:w-8/12 m-auto">
+      <div class="w-[550px] md:w-[800px] lg:w-10/12 xl:w-10/12 2xl:w-8/12 m-auto">
         <div class="join join-vertical w-full">
             <div class="flex items-center mt-28 mb-5">
                 <h1 class="text-5xl text-gray-900 my-4 mr-2">Important FAQ</h1>
@@ -66,29 +66,44 @@
           <div class="collapse collapse-arrow join-item border-base-300 border">
             <input type="radio" name="my-accordion-4" checked="checked" />
             <div class="collapse-title text-xl font-medium">
-              Click to open this one and close others
+                What is the Document Object Model (DOM)?
             </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>The Document Object Model (DOM) is a programming interface for web documents. 
+                It represents the structure of a webpage in a hierarchical, tree-like format, 
+                where each element in the HTML document is a node in the tree.</p>
             </div>
           </div>
           <div class="collapse collapse-arrow join-item border-base-300 border">
             <input type="radio" name="my-accordion-4" />
             <div class="collapse-title text-xl font-medium">
-              Click to open this one and close others
+                How do you select an element from the DOM?
             </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>document.getElementById().</p>
             </div>
           </div>
           <div class="collapse collapse-arrow join-item border-base-300 border">
             <input type="radio" name="my-accordion-4" />
             <div class="collapse-title text-xl font-medium">
-              Click to open this one and close others
+                What is event delegation in the context of the DOM, and why is it useful?
             </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>Event delegation is a technique in JavaScript where you add a single event listener to a parent element, which handles events triggered by its child elements. Instead of attaching event listeners to multiple 
+                child elements individually, you take advantage of event bubbling to handle events more efficiently.</p>
             </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-5" />
+                <div class="collapse-title text-xl font-medium">
+                    How do you manipulate an element's attributes and styles using the DOM?
+                </div>
+                <div class="collapse-content">
+                  <p>I change properties of elements through DOM in several ways :</p>
+                  <p>use the .getAttribute() method</p>
+                  <p>use the .setAttribute() method</p>
+                  <p>use the .removeAttribute() method.</p>
+                  <p>using the .style property.</p>
+                </div>
           </div>
         </div>
       </div>

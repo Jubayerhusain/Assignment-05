@@ -12,3 +12,7 @@ function getIdForChangeClassName (id){
    const classList = document.getElementById(id);
    return classList;
 }
+// get the home btn 
+document.getElementById('home-btn').addEventListener('click', function () {
+    window.location.assign("./index.html")
+})
