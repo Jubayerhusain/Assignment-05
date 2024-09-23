@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+    <!-- All CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- All Style -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+      body {
+        font-family: "Lexend", sans-serif;
+      }
+      .bg-nav {
+        /* background-color: rgba(230, 197, 128, 0.445); */
+        background-color: rgba(94, 240, 27, 0.233);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header section start -->
+    <header
+      class="w-[550px] md:w-[800px] lg:w-[1286px] xl:w-[1440px] 2xl:w-11/12 m-auto sticky top-0 z-20 backdrop-blur-sm bg-white/20"
+    >
+      <div class="">
+        <div class="navbar w-full bg-nav rounded-xl 2xl:px-14">
+          <div class="navbar-start">
+            <div
+              class="btn justify lg:ml-0 my-5 xl:ml-0 2xl:ml-0 bg-lime-400 text-sm lg:text-xl xl:text-xl 2xl:text-xl font-semibold"
+            >
+              Home
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <div class="flex items-center justify-center">
+              <img src="./assets/logo.png" alt="" />
+              <h1 class="p-3 text-xl font-semibold">Donate Bangladesh</h1>
+            </div>
+          </div>
+          <div class="navbar-end">
+            <div class="flex items-center text-xl text-gray-600">
+              <img src="./assets/coin.png" alt="" />
+              <p id="balance" class="px-2">7900</p>
+              <p>BDT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section close -->
+    <!-- main section start -->
+    <main>
+      <!-- FAQ Section  -->
+      <div class="w-12/12 lg:w-10/12 xl:w-10/12 2xl:w-8/12 m-auto">
+        <div class="join join-vertical w-full">
+            <div class="flex items-center mt-28 mb-5">
+                <h1 class="text-5xl text-gray-900 my-4 mr-2">Important FAQ</h1>
+                <img class="w-12 h-12" src="./assets/FQA.svg" alt="">
+            </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              Click to open this one and close others
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              Click to open this one and close others
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">
+              Click to open this one and close others
+            </div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main section start -->
+    <script src="./js/app.js"></script>
+    <script src="./js/utilitise.js"></script>
+  </body>
+</html>
