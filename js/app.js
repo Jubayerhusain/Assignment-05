@@ -8,8 +8,8 @@ noakhaliDonationBtn.addEventListener('click', function () {
     const newBalance = mainBalance - noakhaliDonateInput;
     document.getElementById('balance').innerText = newBalance;
     document.getElementById('noakhali-donate-balance').innerText = noakhaliDonateInput;
+    document.getElementById('modal-noakhali-donate-balance').innerText = noakhaliDonateInput;
 })
-
 // get the feni donationBtn 
 const feniDonationBtn = document.getElementById('feni-donate-btn');
 feniDonationBtn.addEventListener('click', function () {
