@@ -50,3 +50,15 @@ quataDonationBtn.addEventListener('click', function () {
     }
 
 })
+
+// get the history-tab
+
+const historytab = document.getElementById('history-tab');
+historytab.addEventListener('click', function () {
+    console.log("history tab is cliked");
+    document.getElementById('history-tab').classList.add('bg-lime-400');
+    document.getElementById('history-tab').classList.remove('bg-white');
+    document.getElementById('donation-tab').classList.remove('bg-lime-400');
+    document.getElementById('hero-section').classList.add('hidden')
+})
+const 
