@@ -5,7 +5,7 @@ noakhaliDonationBtn.addEventListener('click', function () {
     const mainBalance = getTheElementId('balance');
     const noakhaliDonateInput = getInputFieldById('noakhali-donate-input');
 
-    if (mainBalance < noakhaliDonateInput || isNaN(noakhaliDonateInput) || noakhaliDonateInput ==0) {
+    if (mainBalance < noakhaliDonateInput || isNaN(noakhaliDonateInput) || noakhaliDonateInput == 0) {
         document.getElementById('my_modal_3').classList.add('hidden')
         return alert('invalid Input')
     } else {
@@ -23,7 +23,7 @@ feniDonationBtn.addEventListener('click', function () {
     const mainBalance = getTheElementId('balance');
     const feniDonateInput = getInputFieldById('feni-donate-input');
 
-    if (mainBalance < feniDonateInput || isNaN(feniDonateInput) || feniDonateInput ==0) {
+    if (mainBalance < feniDonateInput || isNaN(feniDonateInput) || feniDonateInput == 0) {
         document.getElementById('my_modal_3').classList.add('hidden')
         return alert('invalid Input')
     } else {
@@ -40,7 +40,7 @@ quataDonationBtn.addEventListener('click', function () {
     const mainBalance = getTheElementId('balance');
     const quataDonateInput = getInputFieldById('quata-donate-input');
 
-    if (mainBalance < quataDonateInput || isNaN(quataDonateInput) || quataDonateInput ==0){
+    if (mainBalance < quataDonateInput || isNaN(quataDonateInput) || quataDonateInput == 0) {
         document.getElementById('my_modal_3').classList.add('hidden')
         return alert('invalid Input')
     } else {
@@ -55,10 +55,16 @@ quataDonationBtn.addEventListener('click', function () {
 
 const historytab = document.getElementById('history-tab');
 historytab.addEventListener('click', function () {
-    console.log("history tab is cliked");
-    document.getElementById('history-tab').classList.add('bg-lime-400');
-    document.getElementById('history-tab').classList.remove('bg-white');
-    document.getElementById('donation-tab').classList.remove('bg-lime-400');
-    document.getElementById('hero-section').classList.add('hidden')
+    getIdForChangeClassName('history-tab').classList.add('bg-lime-400');
+    getIdForChangeClassName('history-tab').classList.remove('bg-white');
+    getIdForChangeClassName('donation-tab').classList.remove('bg-lime-400');
+    getIdForChangeClassName('hero-section').classList.add('hidden')
 })
-const 
+// get the donation-tab 
+const donationtab = document.getElementById('donation-tab');
+donationtab.addEventListener('click', function () {
+    getIdForChangeClassName('history-tab').classList.remove('bg-lime-400');
+    getIdForChangeClassName('history-tab').classList.add('bg-white');
+    getIdForChangeClassName('donation-tab').classList.add('bg-lime-400');
+    getIdForChangeClassName('hero-section').classList.remove('hidden')
+})

@@ -7,3 +7,8 @@ function getTheElementId(id) {
     const elementId = parseFloat(document.getElementById(id).innerText);
     return elementId;
 }
+
+function getIdForChangeClassName (id){
+   const classList = document.getElementById(id);
+   return classList;
+}
