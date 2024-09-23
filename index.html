@@ -90,18 +90,18 @@
             </p>
             <input
               id="noakhali-donate-input"
-              type="number"
+              type="text"
               class="w-full my-2 text-md font-light border-2 rounded-lg border-gray-200 py-3 px-2"
               placeholder="Write Donation Amount"
             />
             <button
               id="noakhali-donate-btn"
-              onclick="my_modal_3.showModal()"
+              onclick="my_modal_3.showModal(this)"
               class="btn bg-lime-400 w-full"
             >
               Donate NOw
             </button>
-            <!-- modal-box  -->
+            <!-- modal-box for noakhali -->
             <dialog id="my_modal_3" class="modal">
               <div class="modal-box">
                 <form method="dialog">
@@ -114,11 +114,9 @@
                 <h3 class="text-lg font-bold text-center text-gray-500">Hello!</h3>
                 <div class="flex justify-center items-center">
                   <img src="./assets/coin.png" alt="" />
-                  <p id="modal-noakhali-donate-balance" class="px-1 text-gray-500">0</p>
                   <p class="text-gray-500">BDT</p>
                 </div>
                 <p class="py-2 text-center text-gray-500">successful donation</p>
-                <p class="text-center text-gray-500">Donate for Flood at Noakhali, Bangladesh</p>
               </div>
             </dialog>
           </div>
@@ -160,7 +158,8 @@
               class="w-full my-2 text-md font-light border-2 rounded-lg border-gray-200 py-3 px-2"
               placeholder="Write Donation Amount"
             />
-            <button id="feni-donate-btn" class="btn bg-lime-400 w-full">
+            <button onclick="my_modal_3.showModal()"
+             id="feni-donate-btn" class="btn bg-lime-400 w-full">
               Donate Now
             </button>
           </div>
@@ -203,7 +202,10 @@
               class="w-full my-2 text-md font-light border-2 rounded-lg border-gray-200 py-3 px-2"
               placeholder="Write Donation Amount"
             />
-            <button id="quata-donate-btn" class="btn bg-lime-400 w-full">
+            <button 
+            onclick="my_modal_3.showModal()"
+            id="quata-donate-btn" 
+            class="btn bg-lime-400 w-full">
               Donate Now
             </button>
           </div>
