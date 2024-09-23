@@ -17,40 +17,20 @@
       body {
         font-family: "Lexend", sans-serif;
       }
+      .bg-nav{
+        /* background-color: rgba(230, 197, 128, 0.445); */
+        background-color: rgba(94, 240, 27, 0.233);
+      }
     </style>
   </head>
   <body>
     <!-- header section start -->
-    <header class="w-[550px] md:w-[800px] lg:w-[1024px] xl:w-[1440px] 2xl:w-10/12 m-auto">
-      <div>
-        <div class="navbar w-full bg-base-100">
+    <header class="w-[550px] md:w-[800px] lg:w-[1024px] xl:w-[1440px] 2xl:w-11/12 m-auto 2xl:px-14 sticky top-0 z-20 backdrop-blur-sm bg-white/20 ">
+      <div class="">
+        <div class="navbar w-full bg-nav rounded-xl">
           <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-              >
-                <li>Donate Bangladesh</li>
-              </ul>
-            </div>
             <div
-              class="btn justify lg:ml-0 xl:ml-0 2xl:ml-0 bg-lime-400 text-sm lg:text-xl xl:text-xl 2xl:text-xl font-semibold"
+              class="btn justify lg:ml-0 my-5 xl:ml-0 2xl:ml-0 bg-lime-400 text-sm lg:text-xl xl:text-xl 2xl:text-xl font-semibold"
             >
               Blog
             </div>
@@ -74,7 +54,7 @@
       <div
         class="m-auto w-8/12 lg:w-4/12 xl:w-2/12 2xl:w-2/12 pt-14 pb-8 flex justify-center"
       >
-        <div id="donation-tab" class="btn bg-lime-400">Donation</div>
+        <div id="donation-tab" class="btn bg-lime-400 mr-2">Donation</div>
         <div id="history-tab" class="btn bg-white border-2">History</div>
       </div>
     </header>
