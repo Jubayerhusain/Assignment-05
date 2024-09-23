@@ -19,8 +19,8 @@ noakhaliDonationBtn.addEventListener('click', function () {
         const createElement = document.createElement('div');
         createElement.className = "bg-white m-5 rounded-xl p-2 border-2 border-gray-300";
         createElement.innerHTML = `
-        <p class="text-xl  text-gray-700">Income: ${noakhaliDonateInput} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
-        <p class="text-lg text-gray-500">${new Date().toLocaleDateString()}</p>
+        <p class="text-xl  text-gray-900 py-2">${noakhaliDonateInput} 6500 Taka is Donated for Flood Relief in Noakhali,Bangladesh</p>
+        <p class="text-md text-gray-700 pb-2 font-light">${new Date().toLocaleDateString()}</p>
         `
         const historyContainer = document.getElementById("history-container");
         historyContainer.insertBefore(createElement, historyContainer.firstChild);
@@ -42,6 +42,15 @@ feniDonationBtn.addEventListener('click', function () {
         const feniMainBalance = getTheElementId('feni-donate-balance');
         const totalFenibalance = feniDonateInput + feniMainBalance
         document.getElementById('feni-donate-balance').innerText = totalFenibalance;
+        // history 
+        const createElement = document.createElement('div');
+        createElement.className = "bg-white m-5 rounded-xl p-2 border-2 border-gray-300";
+        createElement.innerHTML = `
+        <p class="text-xl  text-gray-900 py-2">${feniDonateInput} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+        <p class="text-md text-gray-700 pb-2 font-light">${new Date().toLocaleDateString()}</p>
+        `
+        const historyContainer = document.getElementById("history-container");
+        historyContainer.insertBefore(createElement, historyContainer.firstChild);
     }
 
 })
@@ -61,6 +70,15 @@ quataDonationBtn.addEventListener('click', function () {
         const quataMainBalance = getTheElementId('feni-donate-balance');
         const totalQuatabalance = quataDonateInput + quataMainBalance
         document.getElementById('quata-donate-balance').innerText = totalQuatabalance;
+        // history 
+        const createElement = document.createElement('div');
+        createElement.className = "bg-white m-5 rounded-xl p-2 border-2 border-gray-300";
+        createElement.innerHTML = `
+        <p class="text-xl  text-gray-900 py-2">${quataDonateInput} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</p>
+        <p class="text-md text-gray-700 pb-2 font-light">${new Date().toLocaleDateString()}}</p>
+        `
+        const historyContainer = document.getElementById("history-container");
+        historyContainer.insertBefore(createElement, historyContainer.firstChild);
     }
 
 })
