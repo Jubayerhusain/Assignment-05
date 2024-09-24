@@ -1,15 +1,15 @@
-// get the Noakhali donationBtn 
 const noakhaliDonationBtn = document.getElementById('noakhali-donate-btn');
 noakhaliDonationBtn.addEventListener('click', function () {
     // get the main balance 
     const mainBalance = getTheElementId('balance');
     const noakhaliDonateInput = getInputFieldById('noakhali-donate-input');
-
-    if(mainBalance < noakhaliDonateInput){
+    const noakhaliInput = document.getElementById('noakhali-donate-input').value;
+    // console.log(milliseconds(noakhaliDonateInput));
+    if (mainBalance < noakhaliDonateInput) {
         document.getElementById('my_modal_3').classList.add('hidden')
         alert('insufficient balance')
-    }
-    else if (isNaN(noakhaliDonateInput) || noakhaliDonateInput == 0) {
+    } 
+    else if (isNaN(noakhaliInput) || noakhaliDonateInput == 0) {
         document.getElementById('my_modal_3').classList.add('hidden')
         return alert('invalid Input')
     } 
@@ -37,16 +37,16 @@ feniDonationBtn.addEventListener('click', function () {
     // get the main balane 
     const mainBalance = getTheElementId('balance');
     const feniDonateInput = getInputFieldById('feni-donate-input');
+    const feniInput = document.getElementById('feni-donate-input').value;
 
-    if(mainBalance < feniDonateInput){
+
+    if (mainBalance < feniDonateInput) {
         document.getElementById('my_modal_3').classList.add('hidden')
         alert('insufficient balance')
-   }
-   else if (isNaN(feniDonateInput) || feniDonateInput == 0) {
+    } else if (isNaN(feniInput) || feniDonateInput == 0) {
         document.getElementById('my_modal_3').classList.add('hidden')
         return alert('invalid Input')
-    }
-    else {
+    } else {
         const newBalance = mainBalance - feniDonateInput;
         document.getElementById('balance').innerText = newBalance;
         const feniMainBalance = getTheElementId('feni-donate-balance');
@@ -70,16 +70,15 @@ quataDonationBtn.addEventListener('click', function () {
     // get the main balane 
     const mainBalance = getTheElementId('balance');
     const quataDonateInput = getInputFieldById('quata-donate-input');
+    const quataInput = document.getElementById('quata-donate-input').value;
 
-    if(mainBalance < quataDonateInput ){
+    if (mainBalance < quataDonateInput) {
         document.getElementById('my_modal_3').classList.add('hidden')
         alert('insufficient balance');
-    }
-    else if (isNaN(quataDonateInput) || quataDonateInput == 0) {
+    } else if (isNaN(quataInput) || quataDonateInput == 0) {
         document.getElementById('my_modal_3').classList.add('hidden')
         return alert('invalid Input');
-    }
-     else {
+    } else {
         const newBalance = mainBalance - quataDonateInput;
         document.getElementById('balance').innerText = newBalance;
         const quataMainBalance = getTheElementId('feni-donate-balance');
@@ -120,6 +119,6 @@ historytab.addEventListener('click', function () {
 
 // get the blog btn 
 document.getElementById('blog-btn')
-.addEventListener('click', function () {
-    window.location.assign("./blog.html")
-})
+    .addEventListener('click', function () {
+        window.location.assign("./blog.html")
+    })
